@@ -32,122 +32,101 @@ A user I can:
 - Sort songs in a playlist (by name, duration, added date) 
 
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies used
 
-Frontend
 
-- ⚛️ React (with Vite for fast builds)
-- 🎨 CSS / Tailwind (custom styling optional)
+### Frontend
+- **React**: ^19.1.1  
+- **React DOM**: ^19.1.1
+- **React Router DOM**: ^7.9.2
+- **Formik**: ^2.4.6 
+- **Yup**: ^1.7.1  
+- **Axios**: ^1.12.2
+- **Boxicons**: ^2.1.4
 
-Backend
+### Backend
+- **Flask**
+- **Flask-CORS** 
+- **Flask-RESTful**
+- **Flask-SQLAlchemy**
+- **Flask-Migrate** 
+- **SQLAlchemy-Serializer**
+- **Faker** 
+- **Gunicorn**   
 
-- 🐍 Flask (REST API)
+### Database
+- **PostgreSQL** — Production database  
+- **SQLite** — Local development database  
 
-- 🗄️ SQLAlchemy & Flask-Migrate
-
-- 🔑 Flask-RESTful & Marshmallow
-
-Database
-
-- PostgreSQL / SQLite (development)
 
 ## Getting Started
 
+### Prerequisites
+
+- Python: Version 3.8 or higher
+- Node.js: Version higher than 18
+
+
+
+#### Frontend setup 
+
 1. Clone the Repository
-
+ 
 ``` 
-git clone https://github.com/yourusername/MelodyVault.git
-cd MelodyVault
+git clone https://github.com/Jimmy-wq-code/MelodyVault_frontend
+cd MelodyVault_frontend
 ```
-- Take
-a look at the directory structure.
 
+
+
+2. Install dependencies
 ```
-$ tree 
-.
-├── .gitignore
-├── CONTRIBUTING.md
-├── LICENSE.md
-├── package-lock.json
-├── package.json
-├── Pipfile
-├── Pipfile.lock
-├── README.md
-├── client/
-│  ├─ public/
-│  │  ├─ index.html
-│  │  │  └─ favicon.ico
-│  ├─ src/
-│  │  ├─ api/
-│  │  │  └─ api.js
-│  │  ├─ components/
-│  │  │  ├─ FilterDropdown.js
-│  │  │  ├─ Footer.js
-│  │  │  ├─ NavBar.js
-│  │  │  ├─ PlaylistCard.js
-│  │  │  ├─ SearchBar.js
-│  │  │  ├─ SongCard.js
-│  ├─ context/
-│  │  └─ AuthContext.js
-│  │  ├─ pages/
-│  │  │  ├─ AddSongToPlaylist.js
-│  │  │  ├─ CreatePlaylist.js
-│  │  │  ├─ Home.js
-│  │  │  ├─ Login.js
-│  │  │  ├─ PlaylistDetails.js
-│  │  │  ├─ Playlists.js
-│  │  │  ├─ Profile.js
-│  │  │  ├─ SignUp.js
-│  │  │  ├─ SongDetail.js
-│  │  │  ├─ Songs.js
-│  │  ├─ styles/
-│  │  │  ├─ main.css
-│  │  │  │  ├─PlaylistCard.css
-│  │  ├─ App.js.js
-│  │  ├─ index.js
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── README.md
-├── server
-│  │  ├── app.py
-│  │  ├── config.py
-│  │  ├── models.py
-│  │  ├── resources.py
-│  │  ├── routes.py
-│  │  ├── seed.py
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
+npm install
 ```
-2. Backend Setup
+3. Start the Server
 ```
-pipenv install
+npm run dev
+```
+or
+```
+npm start
+```
+ #### Backend Setup
+ From the README, at the about section, click the backend link to the backend repository, then clone it:
+
+ ```
+ https://github.com/Jimmy-wq-code/MelodyVault_backend
+ ```
+ 2. Install dependencies:
+ ```
+ pipenv install
+ ```
+
+ 3. Activate the virtual environment (if using Pipenv):
+```
 pipenv shell
-cd server
-```
-You can run your Flask API on localhost:5555, Links to an external site, by running: 
-``` 
-python server/app.py
-```
-3. Frontend Setup
-
-```
-cd client
-```
-To download the dependencies for the frontend client, run:
-```
-npm install --prefix client
 ```
 
-You can run your React app on localhost:3000, Links to an external site, by running:
+4. Run the Flask application:
 ```
-npm start --prefix client
+python app.py
 ```
-The app will now be running on:
 
-- Frontend → http://localhost:3000
+or
+
+```
+flask run
+```
+
+### URL Links:
+
+- live site → https://melody-vault-frontend.vercel.app/
+
+- Frontend Repository → https://github.com/Jimmy-wq-code/MelodyVault_frontend
+
+- Frontend → http://localhost:5174/
+
+- Backend Repository → https://github.com/Jimmy-wq-code/MelodyVault_backend
 
 - Backend API → http://localhost:5555
 
