@@ -6,7 +6,6 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import NavBar from "./components/NavBar";
 
 // Pages
-import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -30,10 +29,9 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/home" element={<Home />} />
           <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
           <Route path="/playlists/:id" element={<PrivateRoute><PlaylistDetail /></PrivateRoute>} />
           <Route path="/playlists" element={<Playlists />} />

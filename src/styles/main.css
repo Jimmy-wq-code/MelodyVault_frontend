@@ -321,39 +321,3 @@ button:hover,
   margin-bottom: 1rem;
 }
 
-.welcome-container {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #4a00e0, #8e2de2);
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome-container h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.welcome-container p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.btn-primary {
-  background-color: #fff;
-  color: #4a00e0;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #eee;
-}
